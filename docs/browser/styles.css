@@ -1,0 +1,220 @@
+/* src/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --secondary-color: #041540;
+  --primary-color: #0d3da5;
+  --background-color: #9a9797;
+  --text-color: #ffffff;
+  --white: #fff;
+  --accent-color: #5c5e60;
+  --dark-background: #212121;
+}
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background:
+    linear-gradient(
+      356deg,
+      rgba(13, 61, 165, 0.8588235294),
+      rgba(4, 21, 64, 0.5019607843));
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+.navbar li a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+.navbar li a:hover {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+section.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.home h1 {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+}
+.home p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  z-index: 2;
+}
+section.about {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+.about ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.about ul li {
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.about ul li:hover {
+  transform: scale(1.05);
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+section.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  background: var(--white);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+.project-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.project-card p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+.project-card a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.project-card a:hover {
+  color: var(--primary-color);
+}
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+section.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--white);
+  transition: border-color 0.3s;
+}
+.contact input:focus,
+.contact textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.contact button {
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.contact button:hover {
+  background-color: var(--primary-color);
+}
+footer {
+  background-color: var(--dark-background);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin-top: auto;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .home h1 {
+    font-size: 2rem;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .contact h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* angular:styles/global:styles */
+/*# sourceMappingURL=styles.css.map */

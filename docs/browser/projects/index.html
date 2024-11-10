@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>DrawMe</title>
+  <base href="HashiniMithunika.github.io">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.css"><style ng-app-id="ng">
+
+*[_ngcontent-ng-c414000804] {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+[_ngcontent-ng-c414000804]:root {
+  --secondary-color: #041540;
+  --primary-color: #0d3da5;
+  --accent-color: #5c5e60;
+  --background-color: #9a9797;
+  --text-color: #ffffff;
+  --white: #fff;
+  --dark-background: #212121;
+}
+body[_ngcontent-ng-c414000804], html[_ngcontent-ng-c414000804] {
+  height: 100%;
+}
+body[_ngcontent-ng-c414000804] {
+  font-family: "Arial", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main[_ngcontent-ng-c414000804] {
+  flex: 1;
+  padding: 2rem;
+}
+footer[_ngcontent-ng-c414000804] {
+  background-color: var(--dark-background);
+  color: var(--white);
+  text-align: center;
+  font-size: 1rem;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+header[_ngcontent-ng-c414000804] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+nav[_ngcontent-ng-c414000804] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo[_ngcontent-ng-c414000804] {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--background-color);
+}
+.navbar[_ngcontent-ng-c414000804] {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+.navbar[_ngcontent-ng-c414000804]   li[_ngcontent-ng-c414000804]   a[_ngcontent-ng-c414000804] {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar[_ngcontent-ng-c414000804]   li[_ngcontent-ng-c414000804]   a[_ngcontent-ng-c414000804]:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+.navbar[_ngcontent-ng-c414000804]   li[_ngcontent-ng-c414000804]   a.active-link[_ngcontent-ng-c414000804] {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  font-weight: bold;
+  border-bottom: 3px solid var(--primary-color);
+}
+.hamburger[_ngcontent-ng-c414000804] {
+  display: none;
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .navbar[_ngcontent-ng-c414000804] {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--dark-background);
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .navbar.active[_ngcontent-ng-c414000804] {
+    display: flex;
+  }
+  .navbar[_ngcontent-ng-c414000804]   li[_ngcontent-ng-c414000804] {
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
+  }
+  .hamburger[_ngcontent-ng-c414000804] {
+    display: block;
+  }
+  nav[_ngcontent-ng-c414000804] {
+    padding: 1rem;
+  }
+}
+@media (min-width: 601px) {
+  .navbar[_ngcontent-ng-c414000804] {
+    flex-direction: row;
+  }
+}
+/*# sourceMappingURL=app.component.css.map */</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c414000804="" ng-version="17.3.12" ngh="1" ng-server-context="ssg"><header _ngcontent-ng-c414000804=""><nav _ngcontent-ng-c414000804=""><div _ngcontent-ng-c414000804="" class="logo">Hashini Mithunika</div><ul _ngcontent-ng-c414000804="" class="navbar" ng-reflect-ng-class="[object Object]"><li _ngcontent-ng-c414000804=""><a _ngcontent-ng-c414000804="" routerlink="/" routerlinkactive="active-link" ng-reflect-router-link="/" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/" class="">Home</a></li><li _ngcontent-ng-c414000804=""><a _ngcontent-ng-c414000804="" routerlink="/about" routerlinkactive="active-link" ng-reflect-router-link="/about" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/about" class="">About</a></li><li _ngcontent-ng-c414000804=""><a _ngcontent-ng-c414000804="" routerlink="/projects" routerlinkactive="active-link" ng-reflect-router-link="/projects" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/projects" class="active-link">Projects</a></li><li _ngcontent-ng-c414000804=""><a _ngcontent-ng-c414000804="" routerlink="/contact" routerlinkactive="active-link" ng-reflect-router-link="/contact" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/contact" class="">Contact</a></li></ul><div _ngcontent-ng-c414000804="" class="hamburger">☰</div></nav></header><main _ngcontent-ng-c414000804=""><router-outlet _ngcontent-ng-c414000804=""></router-outlet><app-projects _nghost-ng-c3920821143="" ngh="0"><section _ngcontent-ng-c3920821143="" class="projects"><h2 _ngcontent-ng-c3920821143="">Projects</h2><div _ngcontent-ng-c3920821143="" class="project-card"><h3 _ngcontent-ng-c3920821143="">Project Title 1</h3><p _ngcontent-ng-c3920821143="">Description of the project</p><a _ngcontent-ng-c3920821143="" href="#">View Project</a></div><div _ngcontent-ng-c3920821143="" class="project-card"><h3 _ngcontent-ng-c3920821143="">Project Title 2</h3><p _ngcontent-ng-c3920821143="">Description of the project</p><a _ngcontent-ng-c3920821143="" href="#">View Project</a></div></section></app-projects><!--container--></main><footer _ngcontent-ng-c414000804=""><p _ngcontent-ng-c414000804="">© 2024 Hashini Mithunika. All rights reserved.</p></footer></app-root>
+<script src="polyfills.js" type="module"></script><script src="main.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"20":[{"i":"c3920821143","r":1}]}}]}</script></body></html>
