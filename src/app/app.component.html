@@ -1,0 +1,35 @@
+<!-- src/app/app.component.html -->
+<header>
+  <nav>
+    <div class="logo">Hashini Mithunika</div>
+    <!-- Navigation links for desktop -->
+    <ul class="navbar" [ngClass]="{'active': isMenuOpen}">
+      <li>
+        <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"
+           (click)="closeMenu()">Home</a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"
+           (click)="closeMenu()">About</a>
+      </li>
+      <li>
+        <a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"
+           (click)="closeMenu()">Projects</a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"
+           (click)="closeMenu()">Contact</a>
+      </li>
+    </ul>
+    <!-- Hamburger menu icon for mobile -->
+    <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <p>&copy; 2024 Hashini Mithunika. All rights reserved.</p>
+</footer>
