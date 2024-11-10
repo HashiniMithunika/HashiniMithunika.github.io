@@ -14,6 +14,7 @@ export class AppComponent {
   isMenuOpen = false; // Control whether the mobile menu is open
 
   // Toggle the menu visibility on mobile
+    title: 'HashiniMithunika.github.io' | undefined;
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
