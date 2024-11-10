@@ -1,5 +1,5 @@
 {
-  "name": "draw-me",
+  "name": "HashiniMithunika.github.io",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:draw-me": "node dist/draw-me/server/server.mjs"
+    "serve:ssr:HashiniMithunika.github.io": "node dist/HashiniMithunika.github.io/server/server.mjs"
   },
   "private": true,
   "dependencies": {
