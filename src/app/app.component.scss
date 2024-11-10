@@ -1,0 +1,152 @@
+/* src/app/app.component.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Color Palette */
+:root {
+  --secondary-color: #041540;
+  --primary-color: #0d3da5;
+  --accent-color: #5c5e60;
+  --background-color: #9a9797;
+  --text-color: #ffffff;
+  --white: #fff;
+  --dark-background: #212121;
+}
+
+/* Body Styling */
+body, html {
+  height: 100%; /* Full height to ensure the flexbox works properly */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+/* Main content should grow to fill available space */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--dark-background);
+  color: var(--white);
+  text-align: center;
+  font-size: 1rem;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Navigation Bar Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--background-color);
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.navbar li a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover state */
+.navbar li a:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Active link state */
+.navbar li a.active-link {
+  background-color: var(--secondary-color); /* Highlight the active link */
+  color: var(--white);            /* Text color for active link */
+  font-weight: bold;                        /* Make the active link bold */
+  border-bottom: 3px solid var(--primary-color); /* Add a border to emphasize */
+}
+
+/* Hamburger Icon for Mobile */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Responsive Menu Bar */
+
+/* Small screens (up to 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--dark-background);
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none; /* Initially hidden */
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  nav {
+    padding: 1rem;
+  }
+}
+
+/* Medium and Large screens */
+@media (min-width: 601px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
