@@ -6,19 +6,19 @@
     <ul class="navbar" [ngClass]="{'active': isMenuOpen}">
       <li>
         <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"
-           (click)="closeMenu()">Home</a>
+           (click)="closeMenu(); isAbout = false">Home</a>
       </li>
       <li>
         <a routerLink="/about" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"
-           (click)="closeMenu()">About</a>
+           (click)="closeMenu(); isAbout = true">About</a>
       </li>
       <li>
         <a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"
-           (click)="closeMenu()">Projects</a>
+           (click)="closeMenu(); isAbout = false">Projects</a>
       </li>
       <li>
         <a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"
-           (click)="closeMenu()">Contact</a>
+           (click)="closeMenu(); isAbout = false">Contact</a>
       </li>
     </ul>
     <!-- Hamburger menu icon for mobile -->
@@ -26,10 +26,10 @@
   </nav>
 </header>
 
-<main>
+<main [ngClass]="{'about': isAbout}">
   <router-outlet></router-outlet>
 </main>
 
-<footer>
-  <p>&copy; 2024 Hashini Mithunika. All rights reserved.</p>
-</footer>
+<!--<footer>-->
+<!--  <p>&copy; 2024 Hashini Mithunika. All rights reserved.</p>-->
+<!--</footer>-->

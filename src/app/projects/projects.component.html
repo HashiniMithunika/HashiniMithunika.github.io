@@ -1,15 +1,49 @@
 <!-- src/app/projects/projects.component.html -->
 <section class="projects">
-  <h2>Projects</h2>
-  <div class="project-card">
-    <h3>Project Title 1</h3>
-    <p>Description of the project</p>
-    <a href="#">View Project</a>
+  <div class="card">
+    <div class="additional">
+      <div class="user-card">
+        <div class="level center">
+          Hashini Mithunika
+        </div>
+        <img ngSrc="assets/Hashini%20Mithunika.jpg" alt="image" height="910" width="910" class="image"/>
+        <!--        <div class="points center">-->
+        <!--          5,312 Points-->
+        <!--        </div>-->
+      </div>
+      <div class="more-info">
+        <h1>Portfolio Website</h1>
+        <div class="languages">
+          <img src="favicon.ico" alt="language" [matTooltip]="'Angular 17'"/>
+          <img src="assets/typescript.svg" alt="language" [matTooltip]="'TypeScript'"/>
+          <img src="assets/html.svg" alt="language" [matTooltip]="'HTML'"/>
+          <img src="assets/sass.svg" alt="language" [matTooltip]="'SCSS'"/>
+        </div>
+        <div class="stats">
+          <div>
+            <div class="title">Site</div>
+            <mat-icon class="stat-icon"
+                      (click)="navigate('https://hashinimithunika.github.io/HashiniMithunika.github.io/')">language
+            </mat-icon>
+          </div>
+          <div>
+            <div class="title">Source Code</div>
+            <img class="fa fa-group stat-icon" ngSrc="assets/github.svg" alt="GitHub" height="16" width="16"
+                 (click)="navigate('https://github.com/HashiniMithunika/HashiniMithunika.github.io')"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="general">
+      <h1>Portfolio Website</h1>
+      <p>Designed and developed a personal portfolio website to showcase my projects, skills, and experiences. Built
+        with a focus on clean design and responsive functionality, this project highlights my ability to create
+        engaging, user-friendly web experiences.</p>
+      <span class="more">
+        <div class="time-container">
+        <mat-icon class="timeline">event</mat-icon><span>November 2024</span>
+        </div>
+      </span>
+    </div>
   </div>
-  <div class="project-card">
-    <h3>Project Title 2</h3>
-    <p>Description of the project</p>
-    <a href="#">View Project</a>
-  </div>
-  <!-- Add more projects -->
 </section>

@@ -1,16 +1,9 @@
-<!-- src/app/contact/contact.component.html -->
 <section class="contact">
   <h2>Contact Me</h2>
-  <form>
-    <label for="name">Name</label>
-    <input id="name" type="text" />
-
-    <label for="email">Email</label>
-    <input id="email" type="email" />
-
-    <label for="message">Message</label>
-    <textarea id="message"></textarea>
-
-    <button type="submit">Send</button>
-  </form>
+  <div class="social-media">
+    <div (click)="navigate('https://www.linkedin.com/in/hashini-mithunika/')"><i
+      class="fab fa-linkedin linkedin-bg icon"></i></div>
+    <div (click)="navigate('https://github.com/HashiniMithunika')"><i class="fab fa-github git-bg icon"></i></div>
+    <div (click)="navigate('https://x.com/Hashini_Wasala')"><i class="fab fa-x-twitter x-bg icon"></i></div>
+  </div>
 </section>

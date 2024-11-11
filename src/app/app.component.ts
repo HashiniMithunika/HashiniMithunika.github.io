@@ -11,7 +11,8 @@ import {NgClass} from "@angular/common";
   imports: [RouterModule, NgClass]  // Import RouterModule to enable routing
 })
 export class AppComponent {
-  isMenuOpen = false; // Control whether the mobile menu is open
+  isMenuOpen = false;
+  isAbout = false;
 
   // Toggle the menu visibility on mobile
     title: 'HashiniMithunika.github.io' | undefined;

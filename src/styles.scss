@@ -23,7 +23,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--background-color);
+  //background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -79,7 +79,7 @@ section.home {
 
 .home h1 {
   font-size: 3rem;
-  color: var(--secondary-color);
+  color: white;
   margin-bottom: 3rem;
   text-transform: uppercase;
   z-index: 2;
@@ -93,39 +93,14 @@ section.home {
 }
 
 /* About Section */
-section.about {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
 
 .about h2 {
-  font-size: 2.5rem;
-  color: var(--secondary-color);
+  font-size: 2rem;
+  color: white;
   margin-bottom: 1rem;
-}
-
-.about ul {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-}
-
-.about ul li {
-  padding: 0.75rem 1rem;
-  background: var(--white);
-  color: var(--text-color);
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.about ul li:hover {
-  transform: scale(1.05);
-  background-color: var(--primary-color);
-  color: var(--white);
+  align-items: center;
+  display: flex;
 }
 
 /* Projects Section */
@@ -260,3 +235,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

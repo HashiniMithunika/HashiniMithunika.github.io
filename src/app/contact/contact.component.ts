@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  navigate(path: string) {
+    window.open(path, '_blank');
+  }
 }

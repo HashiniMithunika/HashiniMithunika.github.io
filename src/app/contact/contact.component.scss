@@ -1,0 +1,26 @@
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  a {
+    text-decoration: none !important;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .linkedin-bg{
+    background: #0077b5;
+  }
+  .git-bg{
+    background: #333;
+  }
+  .x-bg{
+    background: #1DA1F2;
+  }
+}
