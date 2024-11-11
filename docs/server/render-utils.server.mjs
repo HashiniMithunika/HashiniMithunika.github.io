@@ -13,7 +13,7 @@ import {
   renderApplication,
   renderModule,
   whenStable
-} from "./chunk-DPG3LASN.mjs";
+} from "./chunk-XBXILLZD.mjs";
 import {
   __asyncGenerator,
   __await,
