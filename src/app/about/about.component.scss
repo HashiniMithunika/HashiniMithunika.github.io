@@ -4,7 +4,7 @@ section .about {
 
 .box{
   margin:0 10%;
-  padding: 10px 0 20px 60px;
+  padding: 10px 0 20px 0;
 }
 
 .box ul{
@@ -48,11 +48,11 @@ section .about {
   border:1px dashed #fff;
   position: absolute;
   top:0;
-  left:30px
+  left:20px
 }
 
 .box ul li{
-  margin: 20px 60px 60px;
+  margin: 20px 50px 60px;
   position: relative;
   padding: 10px 20px;
   background:rgba(255, 255, 255, 0.3);

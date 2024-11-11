@@ -9208,11 +9208,6 @@ section.home {
   align-items: center;
   display: flex;
 }
-section.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
 .project-card {
   background: var(--white);
   border: none;
