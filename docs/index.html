@@ -6,7 +6,7 @@
 <!--  <link rel="icon" type="image/x-icon" href="favicon.ico">-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"><link rel="modulepreload" href="chunk-NUKFIKZO.js"><style ng-app-id="ng">
+<link rel="stylesheet" href="styles.css"><link rel="modulepreload" href="chunk-QPSUKNNC.js"><style ng-app-id="ng">
 
 *[_ngcontent-ng-c987420080] {
   margin: 0;
@@ -27,7 +27,6 @@ body[_ngcontent-ng-c987420080], html[_ngcontent-ng-c987420080] {
 }
 body[_ngcontent-ng-c987420080] {
   font-family: "Arial", sans-serif;
-  color: var(--text-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -130,32 +129,209 @@ nav[_ngcontent-ng-c987420080] {
 }
 /*# sourceMappingURL=app.component.css.map */</style><style ng-app-id="ng">
 
-.banner-container[_ngcontent-ng-c2995324977] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+.banner-container[_ngcontent-ng-c2110652801] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 8px;
 }
-.banner[_ngcontent-ng-c2995324977] {
+@media (max-width: 1120px) {
+  .banner-container[_ngcontent-ng-c2110652801] {
+    flex-direction: column;
+  }
+}
+.banner[_ngcontent-ng-c2110652801] {
   width: -webkit-fill-available;
   height: 350px;
   opacity: 0.3;
   z-index: 0;
 }
-.overlay-image[_ngcontent-ng-c2995324977] {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(50%);
+.overlay-image[_ngcontent-ng-c2110652801] {
   z-index: 1;
   width: 200px;
   height: auto;
   border-radius: 50%;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
+}
+.blog-card[_ngcontent-ng-c2110652801] {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+.blog-card[_ngcontent-ng-c2110652801]   a[_ngcontent-ng-c2110652801] {
+  color: inherit;
+}
+.blog-card[_ngcontent-ng-c2110652801]   a[_ngcontent-ng-c2110652801]:hover {
+  color: #0d3da5;
+}
+.blog-card[_ngcontent-ng-c2110652801]:hover   .photo[_ngcontent-ng-c2110652801] {
+  transform: scale(1.3) rotate(3deg);
+}
+.blog-card[_ngcontent-ng-c2110652801]   .meta[_ngcontent-ng-c2110652801] {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .photo[_ngcontent-ng-c2110652801] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801], .blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801]   ul[_ngcontent-ng-c2110652801] {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801]   a[_ngcontent-ng-c2110652801] {
+  text-decoration: dotted underline;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801]   ul[_ngcontent-ng-c2110652801]   li[_ngcontent-ng-c2110652801] {
+  display: inline-block;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801]   .author[_ngcontent-ng-c2110652801]:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f007";
+}
+.blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801]   .date[_ngcontent-ng-c2110652801]:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f133";
+}
+.blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801]   .tags[_ngcontent-ng-c2110652801]   ul[_ngcontent-ng-c2110652801]:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  margin-right: 10px;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801]   .tags[_ngcontent-ng-c2110652801]   li[_ngcontent-ng-c2110652801] {
+  margin-right: 2px;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801]   .tags[_ngcontent-ng-c2110652801]   li[_ngcontent-ng-c2110652801]:first-child {
+  margin-left: -4px;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .description[_ngcontent-ng-c2110652801] {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .description[_ngcontent-ng-c2110652801]   h2[_ngcontent-ng-c2110652801] {
+  font-family: Poppins, sans-serif;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .description[_ngcontent-ng-c2110652801]   h2[_ngcontent-ng-c2110652801] {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 5px;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .description[_ngcontent-ng-c2110652801]   .read-more[_ngcontent-ng-c2110652801] {
+  text-align: right;
+  color: #0d3da5;
+  display: inline-block;
+  position: relative;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .description[_ngcontent-ng-c2110652801]   .read-more[_ngcontent-ng-c2110652801]:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+.blog-card[_ngcontent-ng-c2110652801]   .description[_ngcontent-ng-c2110652801]   .read-more[_ngcontent-ng-c2110652801]:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.blog-card[_ngcontent-ng-c2110652801]   p[_ngcontent-ng-c2110652801] {
+  position: relative;
+  margin: 1rem 0 0;
+  color: #a2a2a2;
+}
+.blog-card[_ngcontent-ng-c2110652801]   p[_ngcontent-ng-c2110652801]:first-of-type {
+  margin-top: 1.25rem;
+}
+.blog-card[_ngcontent-ng-c2110652801]   p[_ngcontent-ng-c2110652801]:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #0d3da5;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.blog-card[_ngcontent-ng-c2110652801]:hover   .details[_ngcontent-ng-c2110652801] {
+  left: 0%;
+}
+@media (min-width: 640px) {
+  .blog-card[_ngcontent-ng-c2110652801] {
+    flex-direction: row;
+  }
+  .blog-card[_ngcontent-ng-c2110652801]   .meta[_ngcontent-ng-c2110652801] {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .blog-card[_ngcontent-ng-c2110652801]   .description[_ngcontent-ng-c2110652801] {
+    flex-basis: 60%;
+  }
+  .blog-card[_ngcontent-ng-c2110652801]   .description[_ngcontent-ng-c2110652801]:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .blog-card.alt[_ngcontent-ng-c2110652801] {
+    flex-direction: row-reverse;
+  }
+  .blog-card.alt[_ngcontent-ng-c2110652801]   .description[_ngcontent-ng-c2110652801]:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
+  }
+  .blog-card.alt[_ngcontent-ng-c2110652801]   .details[_ngcontent-ng-c2110652801] {
+    padding-left: 25px;
+  }
+}
+.dialog-centered[_ngcontent-ng-c2110652801] {
+  width: 600px;
+  height: 300px;
+  overflow: auto;
 }
 /*# sourceMappingURL=home.component.css.map */</style></head>
 <body class="mat-typography"><!--nghm-->
-  <app-root _nghost-ng-c987420080="" ng-version="17.3.12" ngh="1" ng-server-context="ssg"><header _ngcontent-ng-c987420080=""><nav _ngcontent-ng-c987420080=""><div _ngcontent-ng-c987420080="" class="logo">Hashini Mithunika</div><ul _ngcontent-ng-c987420080="" class="navbar" ng-reflect-ng-class="[object Object]"><li _ngcontent-ng-c987420080=""><a _ngcontent-ng-c987420080="" routerlink="/" routerlinkactive="active-link" ng-reflect-router-link="/" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/" class="active-link">Home</a></li><li _ngcontent-ng-c987420080=""><a _ngcontent-ng-c987420080="" routerlink="/about" routerlinkactive="active-link" ng-reflect-router-link="/about" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/about" class="">About</a></li><li _ngcontent-ng-c987420080=""><a _ngcontent-ng-c987420080="" routerlink="/projects" routerlinkactive="active-link" ng-reflect-router-link="/projects" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/projects" class="">Projects</a></li><li _ngcontent-ng-c987420080=""><a _ngcontent-ng-c987420080="" routerlink="/contact" routerlinkactive="active-link" ng-reflect-router-link="/contact" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/contact" class="">Contact</a></li></ul><div _ngcontent-ng-c987420080="" class="hamburger">☰</div></nav></header><main _ngcontent-ng-c987420080="" ng-reflect-ng-class="[object Object]" class=""><router-outlet _ngcontent-ng-c987420080=""></router-outlet><app-home _nghost-ng-c2995324977="" ngh="0"><section _ngcontent-ng-c2995324977="" class="home"><div _ngcontent-ng-c2995324977="" class="banner-container"><img _ngcontent-ng-c2995324977="" src="assets/222.jpg" alt="Banner image" class="banner"><img _ngcontent-ng-c2995324977="" src="assets/Hashini Mithunika.jpg" alt="Overlay image" class="overlay-image"></div><h1 _ngcontent-ng-c2995324977="">Hashini Mithunika</h1></section></app-home><!--container--></main></app-root>
+  <app-root _nghost-ng-c987420080="" ng-version="17.3.12" ngh="1" ng-server-context="ssg"><header _ngcontent-ng-c987420080=""><nav _ngcontent-ng-c987420080=""><div _ngcontent-ng-c987420080="" class="logo">Hashini Mithunika</div><ul _ngcontent-ng-c987420080="" class="navbar" ng-reflect-ng-class="[object Object]"><li _ngcontent-ng-c987420080=""><a _ngcontent-ng-c987420080="" routerlink="/" routerlinkactive="active-link" ng-reflect-router-link="/" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/" class="active-link">Home</a></li><li _ngcontent-ng-c987420080=""><a _ngcontent-ng-c987420080="" routerlink="/about" routerlinkactive="active-link" ng-reflect-router-link="/about" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/about" class="">About</a></li><li _ngcontent-ng-c987420080=""><a _ngcontent-ng-c987420080="" routerlink="/projects" routerlinkactive="active-link" ng-reflect-router-link="/projects" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/projects" class="">Projects</a></li><li _ngcontent-ng-c987420080=""><a _ngcontent-ng-c987420080="" routerlink="/contact" routerlinkactive="active-link" ng-reflect-router-link="/contact" ng-reflect-router-link-active="active-link" ng-reflect-router-link-active-options="[object Object]" href="HashiniMithunika.github.io/contact" class="">Contact</a></li></ul><div _ngcontent-ng-c987420080="" class="hamburger">☰</div></nav></header><main _ngcontent-ng-c987420080="" ng-reflect-ng-class="[object Object]" class=""><router-outlet _ngcontent-ng-c987420080=""></router-outlet><app-home _nghost-ng-c2110652801="" ngh="0"><section _ngcontent-ng-c2110652801="" class="home"><div _ngcontent-ng-c2110652801="" class="banner-container"><img _ngcontent-ng-c2110652801="" src="assets/Hashini Mithunika.jpg" alt="Overlay image" class="overlay-image"><p _ngcontent-ng-c2110652801="">Motivated Software Engineer with 1.5+ years of industry experience delivering efficient solutions using Angular, Spring Boot, SQL, HTML, CSS, Jenkins, and Flutter. Skilled in collaborating in a growing team to meet technical and enterprise goals. Quick learner with a passion for new technologies, seeking challenging opportunities to further expand my expertise, and thrive in a collaborative and innovative environment.</p></div><div _ngcontent-ng-c2110652801="" class="blog-card"><div _ngcontent-ng-c2110652801="" class="meta"><div _ngcontent-ng-c2110652801="" class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg);"></div><ul _ngcontent-ng-c2110652801="" class="details"><li _ngcontent-ng-c2110652801="" class="author"><a _ngcontent-ng-c2110652801="" href="#">Hashini Mithunika</a></li><li _ngcontent-ng-c2110652801="" class="date">Nov. 20, 2024</li></ul></div><div _ngcontent-ng-c2110652801="" class="description"><h2 _ngcontent-ng-c2110652801="">Optimizing Frontend Performance in Large-Scale Applications</h2><p _ngcontent-ng-c2110652801=""> Learn practical techniques to optimize the performance of large-scale frontend applications, including lazy loading, AOT compilation, state management, and resource optimization, ensuring a seamless user experience.</p><p _ngcontent-ng-c2110652801="" class="read-more">Read More </p></div></div></section></app-home><!--container--></main></app-root>
 <script src="polyfills.js" type="module"></script><script src="main.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"20":[{"i":"c2995324977","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"20":[{"i":"c2110652801","r":1}]}}]}</script></body></html>

@@ -9139,7 +9139,6 @@ html {
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
-  color: var(--text-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -9189,7 +9188,6 @@ section.home {
 }
 .home h1 {
   font-size: 3rem;
-  color: white;
   margin-bottom: 3rem;
   text-transform: uppercase;
   z-index: 2;
@@ -9197,12 +9195,10 @@ section.home {
 }
 .home p {
   font-size: 1.2rem;
-  color: var(--text-color);
   z-index: 2;
 }
 .about h2 {
   font-size: 2rem;
-  color: white;
   margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
@@ -9241,6 +9237,10 @@ section.contact {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contact h2 {
   font-size: 2.5rem;

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/home/blog-1/blog-1.component.scss"],
+  "sourcesContent": [".blog-content {\r\n  color: black !important;\r\n  padding: 20px;\r\n  margin: 20px;\r\n}\r\n"],
+  "mappings": ";AAAA,CAAA;AACE,SAAA;AACA,WAAA;AACA,UAAA;;",
+  "names": []
+}
